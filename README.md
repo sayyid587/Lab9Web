@@ -75,3 +75,87 @@ project/
     └─ index.php  (router)
 
 ```
+## Deskripsi Singkat
+Praktikum 9 ini bertujuan untuk menerapkan **modularisasi pada PHP** dan membuat aplikasi sederhana dengan operasi **CRUD (Create, Read, Update, Delete)** menggunakan struktur folder yang terorganisir.  
+
+Modularisasi dilakukan dengan memisahkan file menjadi beberapa bagian seperti:
+- `views/` → tampilan (header, footer, dashboard, router)
+- `modules/` → fitur utama (CRUD)
+- `config/` → konfigurasi database
+- `asset/` → file CSS/JS
+- `gambar/` → tempat upload gambar barang
+
+---
+
+## Penjelasan Fitur Utama
+**1. Dashboard**
+
+Menampilkan halaman sambutan aplikasi.
+
+![gambar](screenshot/img3.png)
+
+---
+
+**2. Modularisasi**
+
+**Semua file dipisah dalam folder:**
+  - Router terpusat (views/index.php)
+  - CRUD dipisahkan di modules/user/
+  - Header & footer dipisah dari halaman
+    
+**Tujuan:**
+  - Kode lebih bersih
+  - Mudah diperbaiki
+  - Tidak menulis template berulang
+    
+---
+
+**3. Login**
+Menampilkan halaman login yang berisi form login
+
+![gambar](screenshot/img4.png)
+
+---
+
+**4. CRUD (Create, Read, Update, Delete)**
+
+● READ (list.php)
+  - Mengambil semua data dari database
+  - Menampilkan dalam tabel
+  - Menampilkan gambar
+  - Tombol Edit & Delete
+
+![gambar](screenshot/img5.png)
+
+---
+
+● CREATE (add.php)
+  - Input nama, kategori, harga, stok
+  - Upload gambar
+  - Validasi form
+  - Simpan ke database
+
+![gambar](screenshot/img6.png)
+![gambar](screenshot/img7.png)
+![gambar](screenshot/img8.png)
+    
+---
+
+● UPDATE (edit.php)
+  - Menampilkan data lama
+  - Bisa mengganti gambar
+  - Menghapus gambar lama saat update
+
+![gambar](screenshot/img9.png)
+![gambar](screenshot/img10.png)
+![gambar](screenshot/img11.png)
+
+---
+
+● DELETE (delete.php)
+  - Menghapus data berdasarkan ID
+  - Menghapus gambar dari folder /gambar
+
+![gambar](screenshot/img12.png) 
+![gambar](screenshot/img13.png)
+![gambar](screenshot/img14.png)
